@@ -6,7 +6,7 @@ const AllTask = () => {
 
 
   return (
-   <div className="bg-gradient-to-r from-gray-900 via-emerald-900 to-black p-5 rounded-2xl mt-5 shadow-lg">
+    <div className="bg-gradient-to-r from-gray-900 via-emerald-900 to-black p-5 rounded-2xl mt-5 shadow-lg">
   {/* Table Header */}
   <div className="bg-emerald-600/80 mb-3 py-2 px-4 flex justify-between rounded-lg text-white font-semibold">
     <h2 className="w-1/5">Employee Name</h2>

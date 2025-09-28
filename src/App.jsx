@@ -27,7 +27,7 @@ const [userData, setUserData] = useContext(AuthContext)
 
 
 const handleLogin =(email, password)=>{
-  if (email === "admin@example.com" && password === "123") {
+  if (email === "admin@123.com" && password === "123") {
     setUser("admin")
     localStorage.setItem('loggedInUser',JSON.stringify({role:"admin"}))
   }

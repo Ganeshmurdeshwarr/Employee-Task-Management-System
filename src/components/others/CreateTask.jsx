@@ -70,14 +70,21 @@ const CreateTask = () => {
             />
           </div>
           <div>
-            <h3 className="text-sm text-emerald-400 mb-1">Assign to</h3>
-            <input
-              value={asignto}
-              onChange={(e) => setAsignto(e.target.value)}
-              className="w-4/5 py-2 px-3 rounded-lg outline-none bg-gray-800 text-white border border-emerald-500 focus:ring-2 focus:ring-emerald-400"
-              placeholder="Employee name"
-            />
-          </div>
+  <h3 className="text-sm text-emerald-400 mb-1">Assign to</h3>
+  <select
+    value={asignto}
+    onChange={(e) => setAsignto(e.target.value)}
+    className="w-4/5 py-2 px-3 rounded-lg outline-none bg-gray-800 text-white border border-emerald-500 focus:ring-2 focus:ring-emerald-400"
+  >
+    <option value="">-- Select Employee --</option>
+    {userData.map((emp) => (
+      <option key={emp.id} value={emp.name}>
+        {emp.name}
+      </option>
+    ))}
+  </select>
+</div>
+
           <div>
             <h3 className="text-sm text-emerald-400 mb-1">Category</h3>
             <input
