@@ -5,21 +5,20 @@ const CompleteTask = ({data}) => {
   const {date, title, description, category}=data
 
   return (
-        <div className="flex-shrink-0 h-full w-[300px] bg-red-400 rounded-xl px-2 py-5 ">
-      <div className="flex justify-between  items-center ">
-        <h3 className="bg-red-600 px-3 py-1 text-sm rounded ">{category}</h3>
-        <h3 className="text-sm">{date}</h3>
-      </div>
+      <div className="flex-shrink-0 h-full w-[300px] bg-gradient-to-br from-blue-600 to-blue-500 rounded-2xl p-4 shadow-lg text-white hover:scale-105 transition-transform">
+  <div className="flex justify-between items-center">
+    <h3 className="bg-blue-700 px-3 py-1 text-sm rounded-lg">{category}</h3>
+    <h3 className="text-sm">{date}</h3>
+  </div>
 
-        <h2 className="mt-5 text-2xl font-semibold ">{title}</h2>
-        <p className="text-sm  mt-2">
-          {description}
-        </p>
-     
-      <div className=" mt-2">
-        <button className="w-full "> Complete</button>
-      </div>
-    </div>
+  <h2 className="mt-5 text-2xl font-bold">{title}</h2>
+  <p className="text-sm mt-2 text-white/90">{description}</p>
+
+  <div className="mt-4">
+    <button className="w-full bg-green-500 hover:bg-green-600 py-2 rounded-lg font-medium">Complete</button>
+  </div>
+</div>
+
   )
 }
 
